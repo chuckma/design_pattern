@@ -17,7 +17,7 @@ target/
 .classpatch
 
 #idea
-.idea/
+.idea
 /idea/
 *.ipr
 *.iml
