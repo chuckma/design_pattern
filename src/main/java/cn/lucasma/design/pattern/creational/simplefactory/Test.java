@@ -18,9 +18,11 @@ public class Test{
 
         VideoFactory videoFactory = new VideoFactory();
         Video video = videoFactory.getVideo(JavaVideo.class);
+        Video video1 = videoFactory.getVideo(PythonVideo.class);
         if (video == null) {
             return;
         }
         video.produce();
+        video1.produce();
     }
 }
