@@ -44,20 +44,41 @@ public class Test {
 //        System.out.println(instance == obj);
 
         // 懒汉模式 无法防御反射
-        Class clazz = LazySingleton.class;
-        Constructor constructor = clazz.getDeclaredConstructor();
-        constructor.setAccessible(true);
-//        HungrySingleton instance = HungrySingleton.getInstance();
-//        HungrySingleton obj = (HungrySingleton) constructor.newInstance();
-        LazySingleton instance = LazySingleton.getInstance();
-        LazySingleton obj = (LazySingleton) constructor.newInstance();
-        System.out.println(instance);
-        System.out.println(obj);
-        System.out.println(instance == obj);
+//        Class clazz = LazySingleton.class;
+//        Constructor constructor = clazz.getDeclaredConstructor();
+//        constructor.setAccessible(true);
+////        HungrySingleton instance = HungrySingleton.getInstance();
+////        HungrySingleton obj = (HungrySingleton) constructor.newInstance();
+//        LazySingleton instance = LazySingleton.getInstance();
+//        LazySingleton obj = (LazySingleton) constructor.newInstance();
+//        System.out.println(instance);
+//        System.out.println(obj);
+//        System.out.println(instance == obj);
 
 
+        // 枚举 序列化测试 序列化和反序列化不会影响枚举类型的单例
+       /* EnumInstance instance = EnumInstance.getInstance();
+        instance.setData(new Object());
+
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("single_file"));
+        oos.writeObject(instance);
+
+        File file = new File("single_file");
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream(file));
+        EnumInstance newInstance = (EnumInstance) ois.readObject();
+        System.out.println(instance.getData());
+        System.out.println(newInstance.getData());
+        System.out.println(instance == newInstance);*/
 
 
+        //枚举 测试 反射
+//        Class clazz = EnumInstance.class;
+//        Constructor constructor = clazz.getDeclaredConstructor(String.class,int.class);
+//        constructor.setAccessible(true);
+//        EnumInstance instance = (EnumInstance) constructor.newInstance("lucas", "123");
+
+        EnumInstance instance = EnumInstance.getInstance();
+        instance.printTest();
 
     }
 }
