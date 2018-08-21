@@ -23,7 +23,11 @@ public class HungrySingleton implements Serializable{
 
     // 私有构造器
     private HungrySingleton() {
+        // 反射防御 这种方式适用于 1.类加载的时候就把对象实例化的 类是可以的；2.单例静态内部类
 
+        if (hungrySingleton != null) {
+            throw new RuntimeException("单利构造器禁止反射调用！");
+        }
     }
 
     public static HungrySingleton getInstance() {
