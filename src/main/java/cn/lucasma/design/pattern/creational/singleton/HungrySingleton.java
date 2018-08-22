@@ -10,7 +10,7 @@ import java.io.Serializable;
  * 没有延迟加载的效果
  * 如果这个类没有使用，就造成了内存的浪费。
  */
-public class HungrySingleton implements Serializable{
+public class HungrySingleton implements Serializable,Cloneable{
 
     /**
      * 类加载的时候就完成实例化 final 使得类不可更改
@@ -40,5 +40,12 @@ public class HungrySingleton implements Serializable{
      */
     private Object readResolve() {
         return hungrySingleton;
+    }
+
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        // 对于原型模式通过clone 破坏单例的解决方式是
+        // 1单例类不实现 Cloneable 接口；2 如果实现了，那么重写 clone 方法 ，返回 单例对象，不在让其进行clone  操作。
+        return getInstance();
     }
 }

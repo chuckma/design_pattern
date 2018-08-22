@@ -1,6 +1,9 @@
 package cn.lucasma.design.pattern.creational.prototype.clone;
 
+import cn.lucasma.design.pattern.creational.singleton.HungrySingleton;
+
 import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.util.Date;
 
 /**
@@ -19,13 +22,13 @@ public class Test {
         System.out.println(pig1);
         System.out.println(pig2);
 
-//        HungrySingleton hungrySingleton = HungrySingleton.getInstance();
-//        Method method = hungrySingleton.getClass().getDeclaredMethod("clone");
-//        method.setAccessible(true);
-//        HungrySingleton cloneHungrySingleton = (HungrySingleton) method.invoke(hungrySingleton);
-//        System.out.println(hungrySingleton);
-//        System.out.println(cloneHungrySingleton);
-
+      /*  HungrySingleton hungrySingleton = HungrySingleton.getInstance();
+        Method method = hungrySingleton.getClass().getDeclaredMethod("clone");
+        method.setAccessible(true);
+        HungrySingleton cloneHungrySingleton = (HungrySingleton) method.invoke(hungrySingleton);
+        System.out.println(hungrySingleton);
+        System.out.println(cloneHungrySingleton);
+*/
 
 
     }
