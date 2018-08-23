@@ -1,7 +1,7 @@
 package cn.lucasma.design.pattern.creational.builder.v2;
 
 /**
- * Created by geely
+ * Created by lucas
  */
 public class Computer {
 

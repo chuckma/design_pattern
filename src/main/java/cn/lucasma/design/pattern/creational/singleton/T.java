@@ -1,7 +1,7 @@
 package cn.lucasma.design.pattern.creational.singleton;
 
 /**
- * Created by geely
+ * Created by lucas
  */
 public class T implements Runnable {
     @Override

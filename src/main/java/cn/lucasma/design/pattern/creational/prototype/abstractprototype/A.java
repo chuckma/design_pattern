@@ -1,7 +1,7 @@
 package cn.lucasma.design.pattern.creational.prototype.abstractprototype;
 
 /**
- * Created by geely
+ * Created by lucas
  */
 public abstract class A implements Cloneable{
     @Override
