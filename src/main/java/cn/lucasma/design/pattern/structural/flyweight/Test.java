@@ -25,6 +25,9 @@ package cn.lucasma.design.pattern.structural.flyweight;
  * 1. 关注内外部状态，关注线程安全问题
  * 2. 使得系统的逻辑复杂化
  *
+ *
+ * jdk Integer long  的valueOf 方法， IntegerCache
+ *
  */
 public class Test {
 
@@ -38,8 +41,8 @@ public class Test {
             manager.report();
 
         }*/
-        Integer a = Integer.valueOf(100);
-        Integer b = 100;
+        Integer a = Integer.valueOf(127);
+        Integer b = 127;
 
         Integer c = Integer.valueOf(1000);
         Integer d = 1000;
