@@ -1,7 +1,7 @@
 package cn.lucasma.design.pattern.structural.adapter;
 
 /**
- * Created by geely
+ * Created by lucas
  */
 public class AC220 {
     public int outputAC220V(){

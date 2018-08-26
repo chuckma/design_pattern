@@ -1,7 +1,7 @@
 package cn.lucasma.design.pattern.structural.adapter;
 
 /**
- * Created by geely
+ * Created by lucas
  */
 public class Test {
     public static void main(String[] args) {

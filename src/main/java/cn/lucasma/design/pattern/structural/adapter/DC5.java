@@ -1,7 +1,7 @@
 package cn.lucasma.design.pattern.structural.adapter;
 
 /**
- * Created by geely
+ * Created by lucas
  */
 public interface DC5 {
     int outputDC5V();
