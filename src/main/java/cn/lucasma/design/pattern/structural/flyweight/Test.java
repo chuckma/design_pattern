@@ -3,6 +3,7 @@ package cn.lucasma.design.pattern.structural.flyweight;
 /**
  * Author: lucasma
  *
+ * 享元模式
  *
  * 定义: 提供了减少对象数量从而改善应用所需的对象结构的方式
  *
