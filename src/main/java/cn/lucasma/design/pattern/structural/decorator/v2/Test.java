@@ -4,9 +4,11 @@ package cn.lucasma.design.pattern.structural.decorator.v2;
  * Created by lucas
  *
  *
+ * 装饰者
+ *
  * 定义：在不改变原有对象的基础之上，将功能附加到对象之上。
  *
- * 补充定义： 提供了比继承更具有弹性的替代方案（推展原有对象的功能）
+ * 补充定义： 提供了比继承更具有弹性的替代方案（扩展原有对象的功能）
  *
  * 类型：结构性
  *
